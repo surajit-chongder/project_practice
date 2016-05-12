@@ -6,8 +6,8 @@ public class Main {
         FiveHundredRupeesHandler fiveHundredRupeesHandler = new FiveHundredRupeesHandler();
         OneHundredRupeesHandler oneHundredRupeesHandler = new OneHundredRupeesHandler();
         FiftyRupeesHandler fiftyRupeesHandler = new FiftyRupeesHandler();
-        fiveHundredRupeesHandler.setSuccessor(oneHundredRupeesHandler);
-        oneHundredRupeesHandler.setSuccessor(fiftyRupeesHandler);
+        fiveHundredRupeesHandler.setNextHandler(oneHundredRupeesHandler);
+        oneHundredRupeesHandler.setNextHandler(fiftyRupeesHandler);
 
         fiveHundredRupeesHandler.processRequest(atmProcessor);
 
